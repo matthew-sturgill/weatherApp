@@ -1,19 +1,58 @@
-.blue{
-    background-color: blue;
+.cardOne{
+
     border-style: solid;
     border-width: 5px;
     border-radius: 25px;
+    background-image: url("sun-star-sky-4226065.jpg");
+    background-repeat: no-repeat;
+    background-size: 300%;
+    height: 650px;
 }
 
-.orange{ 
-    background-color: orange;
+
+
+.cardTwo{ 
+
     border-style: solid;
     border-width: 5px;
     border-radius: 25px;
+    background-image: url("clear-sky-illustrations-and-clipart-14417-clear-sky-royalty-free-yrs76c-clipart.jpg");
+    background-size: 350%;
+    height: 650px;
+
 }
-.pink{
-    background-color: pink;
+.cardThree{
+    
     border-style: solid;
     border-width: 5px;
     border-radius: 25px;
+    background-image: url("summer_rain_clock_screensaver-189479-1.jpeg");
+    background-size: 500%;
+    height: 650px;
+}
+.cardFour{
+
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 25px;
+    background-image: url("cloud.jpg");
+    background-size: 340%;
+    height: 650px;
+}
+.cardFive{
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 25px;
+    background-image: url("images (1).jpeg");
+    background-size: 150%;
+    height: 650px;
+
+}
+.cardSix{
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 25px;
+    background-image: url("snow-texture-12878039.jpg");
+    background-size: 270%;
+    height: 650px;
 }
