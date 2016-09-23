@@ -32,16 +32,29 @@ $(function () {
             $("#temperatureMax").html(data.daily.data[0].apparentTemperatureMax);
             $("#temperatureMin").html(data.daily.data[0].apparentTemperatureMin);
             $("#rainPercent").html(data.daily.data[0].precipProbability);
-                
+                //above works to pull information might turn to variable and plug into a long set up screen
 
-                
+
             });
 
 
         });
 
-
-
+  // $("#sendZip").click(function() {
+    // var addContent = function() {
+  //      var container = $("#container");
+//        var span = $("<span></span>");
+      //  span.html("temper ");
+    //    span.append("World!");
+  //      var link = $("<a></a>");
+//        link.attr("href", url);
+      //  link.attr("target", "_blank");
+    //    link.html(" (Google That) ");
+  //      span.append(link);
+ //       container.append(span);
+//
+      //  container.append('<span> "Temperature);
+  
     });
 
 

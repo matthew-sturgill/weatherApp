@@ -13,85 +13,56 @@
 </head>
 
 <body>
-
     <div class="container">
-
-
-
-
-        <div>
-            <input type="text" id="zipCode" placeholder="Zip or Town, State">
-            <button id="sendZip">Submit Location</button>
-            <button id= "refreshWeather"> Get Weather </button>
-            <button id= "weeklyForecast"> Weekly Forecast </button>
-        </div>
-        <div class="row">
-            <div class="col-sm-4 cardOne"><br />
-                <div class = "card">
-
-                    <!-- Works below here -->
-                    <br />
-                    <h3 id = "dailySummary"></h3>
-                    <h3 id = "temperature"></h3><br />
-                    <h3 id = "temperatureMax"></h3><br />
-                    <h3 id = "temperatureMin"><h3><br />
-                    <h3 id = "rainPercent"></h3><br />
-                    <br />
-
-
-                </div>
-
-
-            </div>
-            <div class="col-sm-4 cardTwo"><br />
-                <h1>September 19</h1><br />
-                <h3>Temp Hi: "" Temp Low:</h3><br />
-                <h3>Clear</h3><br />
-                <h4>Chance of precipitation: ""</h4><br />
-            </div>
-            <div class="col-sm-4 cardThree"><br />
-                <h1>September 20</h1><br />
-                <h3>Temp Hi: "" Temp Low:</h3><br/>
-                <h3>Rainy</h3><br />
-                <h4>Chance of precipitation: ""</h4><br />
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4 cardFour"><br />
-                <h1>September 21</h1><br />
-                <h3>Temp Hi: "" Temp Low:</h3><br/>
-                <h3>Cloudy</h3><br />
-                <h4>Chance of precipitation: ""</h4><br />
-            </div>
-            <div class="col-sm-4 cardFive"><br />
-                <h1>September 22</h1><br />
-                <h3>Temp Hi: "" Temp Low:</h3><br/>
-                <h3>Thunderstorm</h3><br />
-                <h4>Chance of precipitation: ""</h4><br />
-            </div>
-            <div class="col-sm-4 cardSix"><br />
-                <h1>September 23</h1><br />
-                <h3>Temp Hi: "" Temp Low:</h3><br/>
-                <h3>Snow</h3><br />
-                <h4>Chance of precipitation: ""</h4><br />
-            </div>
-            <div class="inputZip">
-                <form input type="text"></form>
-
-
+        <div class="form-group">
+            <div>
+            <input type="text" id="zipCode" class="form-control" placeholder="Zip or Town, State">
+            <center><button id="sendZip" class="btn btn-success">Submit Location</button>
+            <button id="weeklyForecast" class="btn btn-success"> Weekly Forecast </button></center>
+           <center> <form action="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">
+                <button type="submit" class="btn btn-primary" value="Share to Facebook">Share to Facebook </button></center>
+            </form>
             </div>
 
 
 
-            <!-- Official JQuery -->
-            <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-            <!-- Official Bootstrap -->
-            <script src="bootstrap.js"></script>
-            <!-- Our project JS -->
-            <script src="weatherApp.js"></script>
+
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 cardOne"><br />
+                        <div class="card">
+
+                            <!-- Works below here -->
+                            <br />
+                            <h3 id="dailySummary"></h3>
+                            <h3 id="temperature"></h3><br />
+                            <h3 id="temperatureMax"></h3><br />
+                            <h3 id="temperatureMin">
+                                <h3><br />
+                                    <h3 id="rainPercent"></h3><br />
+                                    <br />
+
+
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+
+
+                    <!-- Official JQuery -->
+                    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+                    <!-- Official Bootstrap -->
+                    <script src="bootstrap.js"></script>
+                    <!-- Our project JS -->
+                    <script src="weatherApp.js"></script>
 
 
 
