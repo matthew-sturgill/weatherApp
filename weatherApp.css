@@ -1,13 +1,17 @@
-.cardOne{
+.newCard{
 
     border-style: solid;
     border-width: 5px;
     border-radius: 25px;
-    background-image: url("sun-star-sky-4226065.jpg");
-    background-repeat: no-repeat;
-    background-size: 300%;
+  
     height: 650px;
 }
 #locationButtons{
-  
+    width:30%;
+    margin: auto;
+    text-align: center;
+}
+#container{
+    background-color: blue;
+
 }

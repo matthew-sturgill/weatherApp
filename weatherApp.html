@@ -16,12 +16,13 @@
     <div class="container">
         <div class="form-group">
             <div>
-            <input type="text" id="zipCode" class="form-control" placeholder="Zip or Town, State">
-            <center><button id="sendZip" class="btn btn-success">Submit Location</button>
-            <button id="weeklyForecast" class="btn btn-success"> Weekly Forecast </button></center>
-           <center> <form action="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">
-                <button type="submit" class="btn btn-primary" value="Share to Facebook">Share to Facebook </button></center>
-            </form>
+                <input type="text" id="zipCode" class="form-control" placeholder="Zip or Town, State">
+                <center><button id="sendZip" class="btn btn-success addCard">Submit Location</button>
+                    <button id="weeklyForecast" class="btn btn-success"> Weekly Forecast </button></center>
+                <center>
+                    <form action="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">
+                        <button type="submit" class="btn btn-primary" value="Share to Facebook">Share to Facebook </button></center>
+                </form>
             </div>
 
 
@@ -29,40 +30,30 @@
 
 
 
-            <div class="container">
+            <div id="container">
                 <div class="row">
                     <div class="col-sm-4 cardOne"><br />
-                        <div class="card">
-
-                            <!-- Works below here -->
-                            <br />
-                            <h3 id="dailySummary"></h3>
-                            <h3 id="temperature"></h3><br />
-                            <h3 id="temperatureMax"></h3><br />
-                            <h3 id="temperatureMin">
-                                <h3><br />
-                                    <h3 id="rainPercent"></h3><br />
-                                    <br />
-
-
+                     <div id = "newCard">
+                         
                         </div>
-
-
-
-
-
-
                     </div>
+                </div>
+</div>
 
 
 
-                    <!-- Official JQuery -->
-                    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-                    <!-- Official Bootstrap -->
-                    <script src="bootstrap.js"></script>
-                    <!-- Our project JS -->
-                    <script src="weatherApp.js"></script>
+
+            </div>
+
+
+
+            <!-- Official JQuery -->
+            <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+            <!-- Official Bootstrap -->
+            <script src="bootstrap.js"></script>
+            <!-- Our project JS -->
+            <script src="weatherApp.js"></script>
 
 
 
