@@ -1,10 +1,9 @@
 $(function () {
     $("#sendZip").click(function () {
         var area = $("#zipCode").val();
-
-
-
-        //   console.log(area);
+         
+      
+      //   console.log(area);
         //    below adds variable "area" to google and retrieves lat and long
         $.ajax("https://maps.googleapis.com/maps/api/geocode/json?address=" + area + "&key=AIzaSyAt3yHpgvBYw2u5lrWXKisJ9d23ITL3VUQ", { dataType: "json" }).done(function (data) {
             console.log(data);
@@ -24,32 +23,26 @@ $(function () {
                 var displayTemperature = Math.round(currentTemperature);
                 var displayTemperatureHigh = Math.round(tempHigh);
                 var displayTemperatureMin = Math.round(tempMin);
-                console.log(dailySummary);
-                console.log(displayTemperature);
-                console.log(displayTemperatureHigh);
-                console.log(displayTemperatureMin);
-                console.log(chanceOfRain);
+                var iconRequest = data.currently.icon;
+                //   console.log(dailySummary);
+                //   console.log(displayTemperature);
+                //   console.log(displayTemperatureHigh);
+                //   console.log(displayTemperatureMin);
+                //   console.log(chanceOfRain);
+                //   console.log(iconRequest);
                 //above works to pull information turn to variable and plug into a long set up screen
-                $("#sendZip").click(function () {
-                    addContent(data);
-                })
-
-                var addContent = function (id) {
-                    var container = $("#container");
-                    var span = $("<span></span>");
-               
-
-                    container.append('<span>Hello, World!";
-                };
+              
+                var div = $("<div></div>");
+                div.append("<center>" + town + "<br />" + dailySummary + "<br />" + "Temperature: " + displayTemperature + "&deg; "+ "<br />" + "Temp high: " + displayTemperatureHigh + "&deg; "+ "<br />" + "Temp min: " + displayTemperatureMin +"&deg; "+ "<br />" + "Chance of Rain: " + chanceOfRain + "%" + "<hr/>"+"</center>")
+                $("#newCard").append(div);
 
 
-            });
-
-        });
+ 
+    
+         });
     });
-
+  });
 });
-
 
 
 
