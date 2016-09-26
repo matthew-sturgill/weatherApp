@@ -1,9 +1,9 @@
 $(function () {
     $("#sendZip").click(function () {
         var area = $("#zipCode").val();
-      //   console.log(area);
+        //   console.log(area);
         //    below adds variable "area" to google and retrieves lat and long
-        
+
         $.ajax("https://maps.googleapis.com/maps/api/geocode/json?address=" + area + "&key=AIzaSyAt3yHpgvBYw2u5lrWXKisJ9d23ITL3VUQ", { dataType: "json" }).done(function (data) {
             console.log(data);
             var latI = data.results[0].geometry.location.lat;
@@ -30,21 +30,21 @@ $(function () {
                 //   console.log(chanceOfRain);
                 //   console.log(iconRequest);
                 //above works to pull information turn to variable and plug into a long set up screen
-              
+
                 var div = $("<div></div>");
-                div.append("<center>" + town + "<br />" + dailySummary + "<br />" + "Temperature: " + displayTemperature + "&deg; "+ "<br />" + "Temp high: " + displayTemperatureHigh + "&deg; "+ "<br />" + "Temp min: " + displayTemperatureMin +"&deg; "+ "<br />" + "Chance of Rain: " + chanceOfRain + "%" + "<hr/>"+"</center>")
+                div.append("<center>" + town + "<br />" + dailySummary + "<br />" + "Temperature: " + displayTemperature + "&deg; " + "<br />" + "Temp high: " + displayTemperatureHigh + "&deg; " + "<br />" + "Temp min: " + displayTemperatureMin + "&deg; " + "<br />" + "Chance of Rain: " + chanceOfRain + "%" + "<hr/>" + "</center>")
                 $("#newCard").append(div);
 
-            $("#delete").click(function () {
-        var area = $("#newCard").empty();
-        
+                $("#delete").click(function () {
+                    var area = $("#newCard").empty();
+
+
+                });
+
 
             });
-               
-    
-         });
+        });
     });
-  });
 });
 
 
