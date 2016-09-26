@@ -4,27 +4,33 @@
 <head>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
     <!-- Our project CSS -->
     <link rel="stylesheet" href="themeForWeather.css">
     <link rel="stylesheet" href="weatherApp.css">
+
     <title>Weather App</title>
 </head>
 
 <body>
 
     <div class="form-group">
-        <input type="text" id="zipCode" class="form-control" placeholder="Zip or Town, State">
-        <center><button id="sendZip" class="btn btn-success addCard">Retrieve Weather Information</button>
-            <form action="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">
-                <button type="submit" class="btn btn-primary" value="Share to Facebook">Share to Facebook </button></center>
-        </form>
+
+        <input type="text" id="zipCode" class="form-control col-md-4" placeholder="Zip or Town, State">
+        <center><button id="sendZip" class="btn btn-success">Retrieve Weather Information</button>
+            <center><button id="delete" class="btn btn-warning">Delete Forecasts</button>
+                <form action="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">
+                    <button type="submit" class="btn btn-primary" value="Share to Facebook">Share to Facebook </button></center>
+            </form>
     </div>
+
+
     <div class="container-fluid">
-        <div class ="row">
-           <div class="col-xs-12 col-md-4"></div> 
-              <div id="newCard" > 
+        <div class="row">
+            <div class="col-xs-12 col-md-4"></div>
+            <div id="newCard">
             </div>
         </div>
     </div>
@@ -37,8 +43,9 @@
     <!-- Official JQuery -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
     <!-- Our project JS -->
     <script src="weatherApp.js"></script>
 
@@ -46,8 +53,8 @@
 
 </body>
 <footer>
-   <center> <a href="https://darksky.net/poweredby/" target="_blank">Powered by Dark Sky</a></center>
-    </footer>
+    <center> <a href="https://darksky.net/poweredby/" target="_blank">Powered by Dark Sky</a></center>
+</footer>
 
 
 </html>
